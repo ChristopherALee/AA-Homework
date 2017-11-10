@@ -1,6 +1,6 @@
 class Stack
-  attr_accesor :ivar
-
+  attr_accessor :ivar
+  
   def initialize
     # create ivar to store stack here!
     @ivar = []
@@ -8,16 +8,17 @@ class Stack
 
   def add(el)
     # adds an element to the stack
-    ivar.push(el)
+    @ivar.push(el)
+    el
   end
 
   def remove
     # removes one element from the stack
-    ivar.pop
+    @ivar.pop
   end
 
   def show
     # return a copy of the stack
-    ivar.dup
+    @ivar.dup
   end
 end
