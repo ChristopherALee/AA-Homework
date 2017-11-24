@@ -118,7 +118,7 @@ class Playwright
       VALUES
         (?, ?)
     SQL
-    
+
     @id = PlayDBConnection.instance.last_insert_row_id
   end
 
